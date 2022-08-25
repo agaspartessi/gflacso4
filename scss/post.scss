@@ -1,3 +1,49 @@
 #page-admin-search {
-    background-color: red;
+    background-color: rgb(0, 174, 255);
+}
+
+.bg-dark{
+background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%) !important;
+}
+
+/**BACKGROUND IMAGE and FONT ROBOTO**/
+
+#page{
+  font-family: 'Roboto';
+  opacity:1 !important;
+  display:block;
+   transition:  all 1s ease !important;
+   background-image: url([[pix:theme|img/bgn]]);
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+/**FOOTER **/
+
+.footer{
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
 }
