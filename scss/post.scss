@@ -1,3 +1,75 @@
+/** FONDO DE LA PAGINA DE ADMIN SEARCH**/
 #page-admin-search {
-    background-color: green;
+    background-color: rgb(0, 174, 255);
+}
+
+/**FOOTER **/
+.bg-dark{
+background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%) !important;
+}
+
+.footer{
+  color:white;
+
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+/** BLOQUES COLAPSABLES**/
+
+.block {
+  .block-action {
+      @include fa-icon();
+      cursor: pointer;
+      float: right;
+      margin: .2rem 0 0 0;
+      &:before {
+          content: "\f062";
+      }
+  }
+  &.hidden {
+      .block-action:before {
+          content: "\f063";
+      }
+      .card-text {
+          display: none;
+      }
+  }
+}
+
+.card-title {
+  margin-bottom: .0rem;
+}
+
+/**BACKGROUND IMAGE and FONT ROBOTO**/
+
+#page{
+  font-family: 'Roboto';
+  opacity:1 !important;
+  display:block;
+   transition:  all 1s ease !important;
+   background-image: url([[pix:theme|img/bgn]]);
+   background-repeat: no-repeat;
+   background-size: 100% auto;
 }
