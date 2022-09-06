@@ -357,3 +357,35 @@
 	    width: 215px;
 	}
 }
+
+/** LOGIN **/
+
+body#page-login-index {
+	background-image: url([[pix:theme|img/backgroundimg]]);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.95;
+	}
+	@media screen and (min-width: 768px) {
+	body#page-login-index div#page {
+	margin-top: 0px !important;
+	padding-top: 100px;
+	}
+	}
+	
+	body#page-login-index div.card { 
+	background-color: #ced4da; border: 1px solid #bfe0e3; 
+	}
+	
+	body#page-login-index div.card { 
+	border-radius: 50px; 
+	}
+	
+	input#username.form-control{
+	border-radius: 50px; 
+	}
+	
+	input#password.form-control{
+	border-radius: 50px; 
+	}
