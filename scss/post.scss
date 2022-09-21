@@ -59,599 +59,6 @@
   margin-bottom: .0rem;
 }
 
-/**BACKGROUND IMAGE and FONT ROBOTO*
-
-#page{
-  font-family: 'Roboto';
-  opacity:1 !important;
-  display:block;
-   transition:  all 1s ease !important;
-   background-image: url([[pix:theme|img/bgn]]);
-   background-repeat: no-repeat;
-   background-size: 100% auto;
-}
-**/
-/*---------------------------------- FOOTER ------------------------------------*/
-
-#page-footer{
-	margin:0px;
-  border-top:none;
-  
-  a {
-    text-decoration: none;
-  }
-}
-
-
-#page-footer.nova-foot{
-	padding-top: 20px;
-	padding-bottom: 50px; 
-	line-height: 17px;
-	font-size: 13px;
-	font-family: helvetica,sans-serif;	
-	text-align: left;
-	background-color: #002b4e;
-}
-#page-footer .row1{
-	margin: 0 auto;
-	float:left;
-	width:100%;
-
-}
-#page-footer .row2{
-	margin: 0 auto;
-	float:left;
-	width:100%;
-	margin-left: 20%;
-}
-
-.nova-foot ul, .nova-foot ol{
-	float:left;
-	margin-left: 1%;
-  list-style-type: none;
-  padding: 0;
-}
-.nova-foot ol li a{
-	color:#333;
-	font-weight: bold;
-}
-.nova-foot ol li{
-	margin-bottom: 10px;
-	color:#333;
-  font-weight: bold;
-  line-height:20px;
-}
-.nova-foot ul li a{
-	color:#777;
-}
-.nova-foot ul li:first-child a{
-	font-weight	: bold;
-	margin-bottom: 10px;
-	color: #333; 
-}
-
-
-.adres{
-	padding-top: 30px;
-	margin-top:2px;
-	display: block;
-	color:#4D4D4D;
-	font-weight: bold;
-	margin: 0 auto;
-    width: 660px;
-
-}
-
-.adres2{
-  display:none !important;
-	border-top: 1px solid #B8B2B2;
-	width:80%;	
-	margin-top:2px;
-	display: block;
-	float: left;
-	color:#4D4D4D;
-	font-weight: bold;
-	position:relative;
-   left: 10%;
-   right: 10%;
-}
-
-
-
-
-	#page-footer {
-
-		.row.large {
-			width:80%;
-			margin:0 auto;
-			margin-bottom:10px;
-      display:none;
-		}
-
-		.columnnuevo {
-			text-align: center;
-			word-break: keep-all; 
-			border-style: solid; 
-			border-width: 0px 1px 0px 0px; 
-			border-color: #152f4e;
-		}
-
-		.columnnuevo.last {
-			border:none;
-		}
-
-	 	.column3 {
-	   		width:33.333333333%;
-	    	float:left;
-		}
-	
-	}
-
-
-
-@media screen and (min-width: 850px) and (max-width: 1350px) {
-
-	.drawer-open-left #page-footer {
-
-
-		.columnnuevo.last {
-			border-style: solid; 
-			border-width: 0px 1px 0px 0px; 
-			border-color: #152f4e;
-		}
-
-	 	.column3 {
-	   		width:33.333333333%;
-	    	float:left;
-		}
-
-		.column3 .column3{
-	   		width:100%;
-	    	float:left;
-		}
-
-		.row.large {
-			margin-bottom:0px;
-      
-		}
-
-		.adres2 {
-      display:none !important;
-			margin-top:10px;
-		}
-	
-	}
-
-}
-
-@media screen and (min-width: 850px) and (max-width: 1050px) {
-
-	#page-footer {
-
-
-		.columnnuevo.last {
-			border-style: solid; 
-			border-width: 0px 1px 0px 0px; 
-			border-color: #152f4e;
-		}
-
-
-	 	.column3 {
-	   		width:33.333333333%;
-	    	float:left;
-		}
-
-		.column3 .column3{
-	   		width:100%;
-	    	float:left;
-		}
-
-		.row.large {
-			margin-bottom:0px;
-      
-		}
-
-		.adres2 {
-      display: none !important;
-			margin-top:10px;
-		}
-	
-	}
-
-}
-
- @media screen and (max-width: 849px) {	
-
-	.column3 {
-		width: 100%;
-	    text-align: center;
-	    margin-bottom: 2px;
-	}
-
-	.adres {
-		width: 410px;
-   		margin: 0 auto;
-   		float:none;
-   		position:initial;
-	}
-	
-
-  }
-
-.adres small{
-
-	width: 200px;
-	float: left;
-	display: block;
-	margin-right: 5px;
-}
-
-.social{
-	float: left; 
-	height: 27px;
-	margin-right: 40px;
-	margin-bottom:22px;
-	width: 210px;
-}
-.red{
-	float: left;
-	display: block;
-	width:30px;
-	height: 30px;
-	margin-left: 5px;
-}
-
-.insta{
-	background-image: url([[pix:theme|logos-svg/insta]]);
-	
-}
-
-.face{
-	background-image: url([[pix:theme|logos-svg/face]]);
-}
-.twi{
-	background-image: url([[pix:theme|logos-svg/twi]]);
-}
-.reddelinkedin{
-	background-image: url([[pix:theme|logos-svg/linkedin]]);
-}
-.youtube{
-	background-image: url([[pix:theme|logos-svg/youtube]]);
-}
-.cloud{
-	background-image: url([[pix:theme|logos-svg/cloud]]);
-}
-.cloud:hover{
-	background-image: url([[pix:theme|logos-svg/cloud]]);
-}
-
-.insta:hover{
-	background-image: url([[pix:theme|logos-svg/insta]]);
-	
-}
-
-.face:hover{
-	background-image: url([[pix:theme|logos-svg/face]]);
-}
-.twi:hover{
-	background-image: url([[pix:theme|logos-svg/twi]]);
-}
-.reddelinkedin:hover{
-	background-image: url([[pix:theme|logos-svg/linkedin]]);
-}
-.youtube:hover{
-	background-image: url([[pix:theme|logos-svg/youtube]]);
-}
-
-.detail {
-	float:left;
-}
-
-@media(max-width:884px){
-
-	.adres {
-		width: 410px;
-	}
-
-	.detail {
-		float:none;
-		margin:0 auto;
-		max-width: 500px;
-	}
-	
-	.social{
-		float:none;
-		margin: 0 auto;
-		margin-bottom: 20px;
-	}
-}
-
-@media(max-width:572px){
-	.facultad {
-		margin-bottom:10px;
-	}
-}
-
-@media(max-width:796px){
-	#page-footer .row1,
-	#page-footer .row2{
-	margin: 0 auto;
-	float:left;
-	width:100%;
-	}
-	
-}
-
-@media (max-width: 884px) {
-	.adres {
-	    width: 215px;
-	}
-}
-
-/************************ LOGIN ******************************/
-
-body#page-login-index footer#page-footer {
-  display: none;
-}
-
-body#page-login-index {
-  background: #192e4d;
-  color: #c6d4e8;
-  background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
-  background-repeat: no-repeat;
-  background-size: 200vh;
-  background-position-x: center;
-  background-position-y: top;
-}
-
-body#page-login-index div#page {
-color: #c6d4e8;
-
-}
-
-body#page-login-index h1.h2.card-header.text-center img {
-  position: relative;
-  left: -99999px;
-}  
-
-body#page-login-index h1.h2.card-header.text-center {
-      position: relative;
-  top: 60px;
-  background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-vertical-2.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  background-position-x: center;   
-}
-
-body#page-login-index .card-body {
-  float: none;
-  padding: 6px;
-  width: 100%;
-  max-width: 100%;
-  height: 75vh;
-  padding-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.pagelayout-login #region-main {
-  overflow: visible;
-}
-
-body#page-login-index .card-header {
-  padding: 0;
-  margin-bottom: 0;
-  background-color: transparent;
-  border-bottom: none;
-}
-
-body#page-login-index .card-body .col-md-5 {
-  padding: 10px;
-}
-
-body#page-login-index #loginbtn {
-  width: 100%;
-  background: #4270b1;
-  border: none;
-  color: #fff;
-  font-family: 'Roboto Condensed';
-  font-weight: normal;
-  font-size: 18px;
-  padding: 10px!important;
-  letter-spacing: 1px;
-  border-radius: 10px;
-}
-
-body#page-login-index #loginbtn:hover {
-  background: #c7a55e;
-  color: #192E4D;
-}
-
-body#page-login-index a.btn.btn-link.p-0 {
-  display: none;
-}
-
-body#page-login-index label {
-  font-size: .9em;
-}
-
-body#page-login-index .forgetpass a {
-  color: #c6d4e8;
-  font-size: .9em;
-}
-
-body#page-login-index .forgetpass a:hover {
-  color: #c7a55e;
-  text-decoration: none;
-}
-
-body#page-login-index .form-control {
-      display: block;
-  width: 100%;
-  padding: 10px;
-  line-height: 1.5;
-  color: #fff;
-  background-color: #294770;
-  background-clip: padding-box;
-  border: none!important;
-  border-radius: 5px;
-  transition: none;
-  font-size: 18px;
-  height: auto;
-}
-
-body#page-login-index .form-control:focus {
-  color: #fefefe!important;
-  background-color: #4270b1!important;
-  border: none!important;
-  outline: 0;
-  box-shadow: none;
-}
-
-body#page-login-index .label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  color: #c6d4e8;
-  font-size: .9em;
-}
-
-body#page-login-index .forgetpass a {
-  color: #c6d4e8;
-  font-size: .9em;
-}
-
-body#page-login-index .form-group, .form-buttons, .path-admin .buttons, .fp-content-center form+div, div.backup-section+form {
-  margin-bottom: 0;
-  margin-top: 2rem;
-}
-
-body#page-login-index .forgetpass.mt-3 {
-  margin: 0!important;
-}
-
-body#page-login-index div.card { 
-  background-color: transparent;
-  border: none;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-color: #fefefe!important;
-opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-color: #fefefe!important;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-color: #fefefe!important;
-}
-
-@media only screen and (min-width: 768px) and (orientation: landscape) { 
-
-  body#page-login-index {
-      background: #192e4d;
-      background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position-x: left;
-  }  
-
-  body#page-login-index .justify-content-center {
-      justify-content: right!important;
-  }
-
-  body#page-login-index div.card { 
-      right: 100px;
-      position: relative;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: transparent;
-      border: none;
-  }
-
-
-  body#page-login-index h1.h2.card-header.text-center img {
-      position: relative;
-      left: -99999px;
-  }    
-
-  body#page-login-index h1.h2.card-header.text-center {
-      position: relative;
-      background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-flacso-campus-blanco.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 100px;
-      background-position-x: right;
-    top: 0;
-  }
-
-  body#page-login-index .col-md-5 {
-      flex: 0 0 100%;  
-      max-width: 100%;  
-  }
-
-  body#page-login-index .mt-sm-5, .my-sm-5 {
-      margin-top: 15vh!important;
-  }
-
-  body#page-login-index .card-body {
-      padding: 0;
-      float: right;
-      position: relative;
-      top: 35px;
-      left: 0px;
-      right: 0px;
-      margin: 0;
-      width: 45%;
-      max-width: 300px;
-      height: auto;
-      display: block;
-      text-align: left;
-  }
-
-  body#page-login-index .card-body .col-md-5 {
-      padding: 15px 15px 0;
-  }
-
-  body#page-login-index h2.card-header.text-center {
-      padding: 0;
-  }
-}
-
-@media only screen and (min-width: 768px) and (orientation: portrait) {
-body#page-login-index {
-     background: #192e4d;
-          background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  }  
-body#page-login-index .justify-content-center {
-  justify-content: center!important;
-}
-body#page-login-index div.card {
-  right: 0;
-}
-
-body#page-login-index .card-body {
-  margin: auto;
-  width: 62%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  text-align: center;
-  float: none;
-}
-.col-md-5 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-}
 
 /** NAVBAR **/
 
@@ -1766,5 +1173,526 @@ nav.navbar .fa-solid:hover {
   }
   
   /** FIN TinyMCE Custom Styles **/
+
+  
+  /****** LOGIN *******/
+        body#page-login-index footer#page-footer {
+          display: none;
+      }
+      body#page-login-index .row {
+          align-items: center;
+      }
+      
+      body#page-login-index {
+          background: #192e4d;
+          color: #c6d4e8;
+          background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
+          background-repeat: no-repeat;
+          background-size: 200vh;
+          background-position-x: center;
+          background-position-y: top;
+      }
+      
+      body#page-login-index div#page {
+      color: #c6d4e8;
+      }
+       
+      body#page-login-index h1.h2.card-header.text-center img {
+          position: relative;
+          left: -99999px;
+      }  
+      
+      body#page-login-index h1.h2.card-header.text-center {
+              position: relative;
+          top: 60px;
+          background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-vertical-2.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 100%;
+          background-position-x: center;   
+      }
+      
+      body#page-login-index .card-body {
+          float: none;
+          padding: 6px;
+          width: 100%;
+          max-width: 100%;
+          height: 75vh;
+          padding-top: 5vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+      
+      .pagelayout-login #region-main {
+          overflow: visible;
+      }
+      
+      body#page-login-index .card-header {
+          padding: 0;
+          margin-bottom: 0;
+          background-color: transparent;
+          border-bottom: none;
+      }
+      
+      body#page-login-index .card-body .col-md-5 {
+          padding: 10px;
+      }
+      
+      body#page-login-index #loginbtn {
+          width: 100%;
+          background: #D95056;
+          border: none;
+          color: #fff;
+          font-family: 'Roboto Condensed';
+          font-weight: 400;
+          font-size: 0.857143em;
+          padding: 10px!important;
+          letter-spacing: 1px;
+          border-radius: 5px;
+      }
+      body#page-login-index #loginbtn:hover {
+          background: #c7a55e;
+          color: #192E4D;
+      }
+      
+      body#page-login-index a.btn.btn-link.p-0 {
+          display: none;
+      }
+      
+      body#page-login-index label {
+          font-size: .9em;
+      }
+      
+      body#page-login-index .forgetpass a {
+          color: #c6d4e8;
+          font-size: .9em;
+      }
+      
+      body#page-login-index .forgetpass a:hover {
+          color: #c7a55e;
+          text-decoration: none;
+      }
+      
+      form#login {
+          margin-top: 10px!important;
+      }
+      
+      body#page-login-index .form-control {
+              display: block;
+          width: 100%;
+          padding: 10px;
+          line-height: 1.5;
+          color: #fff;
+          background-color: #294770;
+          background-clip: padding-box;
+          border: none!important;
+          border-radius: 5px;
+          transition: none;
+          font-size: 0.857143em;
+          height: auto;
+      }
+      
+      body#page-login-index .form-control:focus {
+          color: #fefefe!important;
+          background-color: #4270b1!important;
+          border: none!important;
+          outline: 0;
+          box-shadow: none;
+      }
+      
+      body#page-login-index .label {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+          color: #c6d4e8;
+          font-size: .9em;
+      }
+      
+      body#page-login-index .forgetpass a {
+          color: #c6d4e8;
+          font-size: .9em;
+      }
+      
+      body#page-login-index .form-group, .form-buttons, .path-admin .buttons, .fp-content-center form+div, div.backup-section+form {
+          margin-bottom: 25px;
+          margin-top: 0;
+      }
+      
+      body#page-login-index .forgetpass.mt-3 {
+          margin: 0!important;
+      }
+      
+      body#page-login-index div.card { 
+          background-color: transparent;
+          border: none;
+      }
+      
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fefefe!important;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #fefefe!important;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #fefefe!important;
+      }
+      
+      @media only screen and (min-width: 768px) and (orientation: landscape) { 
+      
+          body#page-login-index {
+              background: #192e4d;
+              background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position-x: left;
+          }  
+        
+          body#page-login-index .justify-content-center {
+              justify-content: right!important;
+          }
+        
+          body#page-login-index div.card { 
+              right: 100px;
+              position: relative;
+              top: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: transparent;
+              border: none;
+          }
+      
+       
+          body#page-login-index h1.h2.card-header.text-center img {
+              position: relative;
+              left: -99999px;
+          }    
+      
+          body#page-login-index h1.h2.card-header.text-center {
+              position: relative;
+              background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-flacso-login.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              height: 100px;
+              background-position-x: right;
+            top: 0;
+          }
+        
+          body#page-login-index .col-md-5 {
+              flex: 0 0 100%;  
+              max-width: 100%;  
+          }
+      
+          body#page-login-index .mt-sm-5, .my-sm-5 {
+          display: none;
+          }
+      
+          body#page-login-index .card-body {
+              padding: 0;
+              float: right;
+              position: relative;
+              top: 0;
+              left: 0px;
+              right: 0px;
+              margin: 0;
+              width: 45%;
+              max-width: 300px;
+              height: auto;
+              display: block;
+              text-align: left;
+          }
+      
+          body#page-login-index .card-body .col-md-5 {
+              padding: 15px 15px 0;
+          }
+        
+          body#page-login-index h2.card-header.text-center {
+              padding: 0;
+          }
+      }
+      
+      @media only screen and (min-width: 768px) and (orientation: portrait) {
+       body#page-login-index {
+             background: #192e4d;
+                  background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position-x: center;
+          }  
+       body#page-login-index .justify-content-center {
+          justify-content: center!important;
+      }
+        body#page-login-index div.card {
+          right: 0;
+        }
+        
+        body#page-login-index .card-body {
+          margin: auto;
+          width: 62%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+          text-align: center;
+          float: none;
+      }
+        
+          body#page-login-index .col-md-5 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+      }
+
+ /** AREA PERSONAL **/
+    
+ body#page-my-index {
+  background: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 21px;
+}
+
+span.mr-1 {
+  margin-right: 0.571429em!important;
+}
+
+body#page-my-index #paged-content-container-0 .list-group-item {
+  position: relative;
+  display: block;
+  padding: 1.5em 0 1.5em 1.904762em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0;
+}
+
+body#page-my-index .block .block-cards a.coursename, body#page-my-index .block .block-cards span.categoryname, body#page-my-index .block .block-cards .btn-link {
+  color: inherit;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: .9em;
+}
+  body#page-my-index .block_myoverview .header h5.d-inline {
+  font-size: 2.61905em!important;
+}
+
+  body#page-my-index .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: transparent;
+      background-clip: border-box;
+      border: none;
+  }
+  
+body#page-my-index .header h5.d-inline {
+  font-size: 2.61905em;
+  text-align: left;
+  font-weight: 100;
+}    
+
+
+a.aalink.coursename:hover {
+  text-decoration: none;
+  font-weight: 600!important;
+  color: #d95056!important;
+}
+
+#block-region-side-pre .header {
+      border-left: 3px solid #4270b1;
+  text-align: left;
+  padding: 10px 30px;
+  border-radius: 0;
+}
+
+#block-region-side-pre h5 {
+  font-weight: 400!important;
+  font-size: 1em!important;
+  color: #4270b1;
+}
+
+.d-flex.align-items-center.flex-wrap {
+  text-align: left!important;
+  margin-top: 1em;
+}
+
+button {
+  background: #D95056;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.857143em;
+  padding: 10px!important;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+  .btn:not(:disabled):not(.disabled) {
+      cursor: pointer;
+      border-radius: 5px;
+  font-weight: 600;
+      }
+
+  .btn-secondary {
+  background: #D95056;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.857143em;
+  padding: 10px!important;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background: #c7a55e;
+  color: #192e4d;
+}
+.btn-outline-secondary {
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  padding: 0px 10px!important;
+  line-height: .9;
+  font-size: .85em;
+  background: transparent;
+  font-family: 'Roboto Condensed';
+  border: none;
+  border-left: 0.9em solid #4270b1;
+  border-radius: 0!important;
+}
+
+.btn-outline-secondary:hover {
+  color: #c7a55e;
+  background-color: transparent;
+  border: none;
+  border-left: 0.9em solid #c7a55e;
+}
+
+.block #accessibility_controls button {
+  padding: 4px!important;
+}
+  i.icon.fa.fa-ellipsis-h.fa-fw:hover {
+ color: #c7a55e;
+}
+
+  .btn-outline-secondary i.icon {
+      display: none;
+  }
+  
+  #page-my-index #region-main.has-blocks {
+  display: inline-block;
+  width: 100%;
+  max-width: 900px;
+  margin: auto auto;
+}
+      
+  body#page-my-index .header h5.d-inline {
+      font-size: 1.1em;
+  }
+      
+  .block_myoverview .paged-content-page-container {
+      margin-top: 30px;
+      min-height: 13rem;
+  }
+  
+  .fa-star:before {
+content: "\f192"!important;
+  position: relative;
+  bottom: 1px;
+      color: #D95056;
+      font-size: .95em;;
+  }
+  
+  .fa-ellipsis-h:before {
+          content: "\f142"!important;
+      font-size: 1.1em;
+      color: #4270b1;
+  }
+  
+  /** FOOTER **/
+  
+  #page-footer.nova-foot {
+      padding-top: 30px!important;
+      padding-bottom: 30px!important;
+      line-height: 120%;
+      font-size: 0.952381em;
+      font-family: 'Roboto Condensed';
+      color: #fff!important;
+      text-align: left;
+      background-color: #192e4d!important;
+      background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: left;
+  }
+  
+  .adres {
+      color: #fff;
+      letter-spacing: .3px;
+      font-size: 1.04762em;
+      line-height: 120%;
+      width: 380px;
+      margin: 0;
+      margin-left: auto;
+      border-left: 2px solid white;
+      height: 100%;
+      display: flow-root;
+      padding-left: 80px;
+      padding-bottom: 30px;
+  }
+  
+  .social {
+      margin-bottom: 45px;
+      width: 100%;
+  }
+  
+  
+  .red {
+      margin-left: 0;
+      margin-right: 15px;
+  }
+  
+  #page-footer a {
+      text-decoration: underline;
+      filter: brightness(5);
+  }
+  
+  .adres small {
+      width: 100%;
+      float: left;
+      display: block;
+      margin-right: 5px;
+  }
+
+#page-footer a:hover {
+  color: #c7a55e;
+  filter: brightness(1);
+}
+
+@media only screen and (max-width: 768px) {
+
+footer#page-footer {
+  background-size: 200vh!important;
+  background-position-x: center!important;
+  background-position-y: bottom;
+}
+
+   .adres {
+     margin-left: 0;
+  border: none;
+  padding-left: 30px;
+}
+
+#page-my-index #region-main.has-blocks {
+  margin-top: 0;
+  width: 100%;
+}
+}
 
   
