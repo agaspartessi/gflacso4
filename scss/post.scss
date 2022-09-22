@@ -1615,84 +1615,318 @@ content: "\f192"!important;
       color: #4270b1;
   }
   
-  /** FOOTER **/
-  
-  #page-footer.nova-foot {
-      padding-top: 30px!important;
-      padding-bottom: 30px!important;
-      line-height: 120%;
-      font-size: 0.952381em;
-      font-family: 'Roboto Condensed';
-      color: #fff!important;
-      text-align: left;
-      background-color: #192e4d!important;
-      background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: left;
-  }
-  
-  .adres {
-      color: #fff;
-      letter-spacing: .3px;
-      font-size: 1.04762em;
-      line-height: 120%;
-      width: 380px;
-      margin: 0;
-      margin-left: auto;
-      border-left: 2px solid white;
-      height: 100%;
-      display: flow-root;
-      padding-left: 80px;
-      padding-bottom: 30px;
-  }
-  
-  .social {
-      margin-bottom: 45px;
-      width: 100%;
-  }
-  
-  
-  .red {
-      margin-left: 0;
-      margin-right: 15px;
-  }
-  
-  #page-footer a {
-      text-decoration: underline;
-      filter: brightness(5);
-  }
-  
-  .adres small {
-      width: 100%;
-      float: left;
-      display: block;
-      margin-right: 5px;
-  }
+   /** FOOTER **/
+
+   #page-footer.nova-foot {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+    line-height: 120%;
+    font-size: 0.952381em;
+    font-family: 'Roboto Condensed';
+    color: #fff!important;
+    text-align: left;
+    background-color: #192e4d!important;
+    background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa10.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+}
+
+.adres {
+    color: #fff;
+    letter-spacing: .3px;
+    font-size: 1.04762em;
+    line-height: 120%;
+    width: 380px;
+    margin: 0;
+    margin-left: auto;
+    border-left: 2px solid white;
+    height: 100%;
+    display: flow-root;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+#page-footer a {
+    text-decoration: underline;
+    filter: brightness(5);
+    margin:0px;
+    border-top:none;
+    text-decoration: none;
+}
+
+.adres small {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-right: 5px;
+}
 
 #page-footer a:hover {
-  color: #c7a55e;
-  filter: brightness(1);
+color: #c7a55e;
+filter: brightness(1);
 }
 
 @media only screen and (max-width: 768px) {
 
 footer#page-footer {
-  background-size: 200vh!important;
-  background-position-x: center!important;
-  background-position-y: bottom;
+background-size: 200vh!important;
+background-position-x: center!important;
+background-position-y: bottom;
 }
 
-   .adres {
-     margin-left: 0;
-  border: none;
-  padding-left: 30px;
+ .adres {
+   margin-left: 0;
+border: none;
+padding-left: 30px;
 }
 
 #page-my-index #region-main.has-blocks {
-  margin-top: 0;
-  width: 100%;
+margin-top: 0;
+width: 100%;
 }
 }
 
-  
+#page-footer .row1{
+margin: 0 auto;
+float:left;
+width:100%;
+
+}
+#page-footer .row2{
+margin: 0 auto;
+float:left;
+width:100%;
+margin-left: 20%;
+}
+
+.nova-foot ul, .nova-foot ol{
+float:left;
+margin-left: 1%;
+list-style-type: none;
+padding: 0;
+}
+.nova-foot ol li a{
+color:#333;
+font-weight: bold;
+}
+.nova-foot ol li{
+margin-bottom: 10px;
+color:#333;
+font-weight: bold;
+line-height:20px;
+}
+.nova-foot ul li a{
+color:#777;
+}
+.nova-foot ul li:first-child a{
+font-weight	: bold;
+margin-bottom: 10px;
+color: #333; 
+}
+
+.adres2{
+  display:none !important;
+    border-top: 1px solid #B8B2B2;
+    width:80%;	
+    margin-top:2px;
+    display: block;
+    float: left;
+    color:#4D4D4D;
+    font-weight: bold;
+    position:relative;
+   left: 10%;
+   right: 10%;
+}
+
+#page-footer {
+
+  .row.large {
+      width:80%;
+      margin:0 auto;
+      margin-bottom:10px;
+display:none;
+  }
+
+  .columnnuevo {
+      text-align: center;
+      word-break: keep-all; 
+      border-style: solid; 
+      border-width: 0px 1px 0px 0px; 
+      border-color: #152f4e;
+  }
+
+  .columnnuevo.last {
+      border:none;
+  }
+
+   .column3 {
+         width:33.333333333%;
+      float:left;
+  }
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1350px) {
+
+.drawer-open-left #page-footer {
+
+
+  .columnnuevo.last {
+    border-style: solid; 
+    border-width: 0px 1px 0px 0px; 
+    border-color: #152f4e;
+  }
+
+   .column3 {
+       width:33.333333333%;
+      float:left;
+  }
+
+  .column3 .column3{
+       width:100%;
+      float:left;
+  }
+
+  .row.large {
+    margin-bottom:0px;
+
+  }
+
+  .adres2 {
+    display:none !important;
+    margin-top:10px;
+  }
+
+}
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1050px) {
+
+#page-footer {
+
+
+  .columnnuevo.last {
+    border-style: solid; 
+    border-width: 0px 1px 0px 0px; 
+    border-color: #152f4e;
+  }
+
+
+   .column3 {
+       width:33.333333333%;
+      float:left;
+  }
+
+  .column3 .column3{
+       width:100%;
+      float:left;
+  }
+
+  .row.large {
+    margin-bottom:0px;
+
+  }
+
+  .adres2 {
+    display: none !important;
+    margin-top:10px;
+  }
+
+}
+
+}
+
+@media screen and (max-width: 849px) {	
+
+.column3 {
+  width: 100%;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.adres {
+  width: 410px;
+     margin: 0 auto;
+     float:none;
+     position:initial;
+}
+
+
+}
+
+.adres small{
+
+width: 200px;
+float: left;
+display: block;
+margin-right: 5px;
+}
+
+.social{
+float: left; 
+height: 27px;
+margin-right: 40px;
+margin-bottom: 45px;
+width: 100%;
+}
+.red{
+float: left;
+display: block;
+width:30px;
+height: 30px;
+margin-left: 5px !important;
+}
+
+
+.insta{
+	background-image: url([[pix:theme|logos-svg/insta]]);
+
+}
+
+.face{
+	background-image: url([[pix:theme|logos-svg/face]]);
+}
+.twi{
+	background-image: url([[pix:theme|logos-svg/twi]]);
+}
+.reddelinkedin{
+	background-image: url([[pix:theme|logos-svg/linkedin]]);
+}
+.youtube{
+	background-image: url([[pix:theme|logos-svg/youtube]]);
+}
+.cloud{
+	background-image: url([[pix:theme|logos-svg/cloud]]);
+}
+.cloud:hover{
+	background-image: url([[pix:theme|logos-svg/cloud]]);
+}
+
+.insta:hover{
+	background-image: url([[pix:theme|logos-svg/insta]]);
+
+}
+
+.face:hover{
+	background-image: url([[pix:theme|logos-svg/face]]);
+}
+.twi:hover{
+	background-image: url([[pix:theme|logos-svg/twi]]);
+}
+.reddelinkedin:hover{
+	background-image: url([[pix:theme|logos-svg/linkedin]]);
+}
+.youtube:hover{
+	background-image: url([[pix:theme|logos-svg/youtube]]);
+}
+
+.detail {
+	float:left;
+}
+
