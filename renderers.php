@@ -39,4 +39,9 @@ class theme_gflacso4_core_renderer extends core_renderer {
         return $this->render_from_template('core/block', $context);
     }
 
+
+
 }
+
+
+
