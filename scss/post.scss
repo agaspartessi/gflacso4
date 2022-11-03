@@ -142,21 +142,21 @@ img.userpicture:hover {
 }
 
 .navbar .count-container {
-  padding: 0 5px;
-  border-radius: 50%;
-  background-color: #ffffffb5;
-  border: 2px solid #BA0C2F;
-  color: #BA0C2F;
-  font-size: 0.9em;
-  line-height: 135%;
-  position: absolute;
-  top: 6px;
-  right: -6px;
-  font-weight: 600;
-  width: 22px;
-  height: 22px;
-  text-align: center;
-  padding-top: 0px;
+    padding-top: 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #BA0C2F;
+    color: #BA0C2F;
+    font-size: .75em;
+    line-height: 135%;
+    position: absolute;
+    top: 6px;
+    right: -6px;
+    font-weight: 600;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    font-family: 'Roboto Mono';
 }
 
 .popover-region-toggle.nav-link.icon-no-margin {
@@ -2248,13 +2248,18 @@ img {
     border-style: none;
 }
 
+#region-main img.userpicture {
+    margin-right: 0.5em;
+}
+
 .pagelayout-admin form .row {
   flex-direction: row;
 }
 
 #page-course-edit .format-tiles .sectiontitle::after, .format-tiles .badge-info {
   height: auto;
-  background: #a3c3e8;
+  background: #C5E9EB;
+  color: #5c6e6f;
 }
   
 #page-course-edit .format-tiles .sectiontitle::after {
@@ -2262,15 +2267,21 @@ img {
   background: #a3c3e8;
 }
 
-.format-tiles .badge-info {
-  height: auto;
-  background: #3CB5CB!important;
+.format-tiles .badge-info, .badge-info {
+    color: #5c6e6f;
+    background-color: #C5E9EB!important;
+    height: auto;
 }
   
 .format-site h1 {
   width: 100%!important;
   display: none;
 }
+
+div {
+    text-align: left;
+}
+
   
 i.icon {
   color: #333;
@@ -2411,7 +2422,10 @@ a.btn.btn-secondary.btn-sm {
   max-width: 860px;
   margin: auto;
   width: 100%;
-  border-radius: 20px 0 0 0;
+  border-radius: 0;
+  padding-bottom: .2em;
+  padding-top: .2em;
+
 }
   
 #region-main h2 {
@@ -2599,12 +2613,14 @@ b, strong {
 }
 
 .breadcrumb {
-  font-weight: 100;
-  border: none!important;
-  color: #192E4D;
-  height: 35px;
-  line-height: 180%;
+    font-weight: 100;
+    border: none!important;
+    color: #192E4D;
+    min-height: 35px;
+    line-height: 180%;
+    height: auto;
 }
+
 
 .breadcrumb a {
   white-space: nowrap;
@@ -2658,6 +2674,11 @@ a[aria-current="page"] {
   margin-top: 0!important;
   text-align: left;
 }
+
+#region-main h2 span {
+    color: #294770!important;
+}
+
   
 .block_myoverview .card-text.content.mt-3 {
   padding: 15px 0!important;
@@ -3125,13 +3146,6 @@ li.post {
   color: #BA0C2F;
 }
 
-.dndupload-hidden {
-  padding-bottom: 2.5em!important;
-  display: block;
-  border: 1px solid #d9d9d9;
-  border-top: none;
-  margin-top: 0;
-}
 
 .dndupload-hidden .mod-indent {
   display: none;
@@ -3239,9 +3253,38 @@ form .row {
 }
 
 .yui3-panel {
-  position: absolute;
-  font-size: .85em;
+    position: fixed;
+    font-size: .85em;
+    left: 0!important;
+    right: 0;
+    top: 165px!important;
+    width: 743px!important;
+    margin: auto;
+    max-height: 75vh;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 13px 5px rgba(126,126,126,0.75);
+-webkit-box-shadow: 0px 0px 13px 5px rgba(126,126,126,0.75);
+-moz-box-shadow: 0px 0px 13px 5px rgba(126,126,126,0.75);
 }
+
+@media (min-width: 576px) {
+    .context-header-settings-menu {
+        position: relative;
+        right: 2.5em;
+        z-index: 1;
+    }
+}
+
+    
+.moodle-dialogue-base .moodle-dialogue-wrap {
+    background-color: #fff;
+    border: none;
+}
+
+.moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd {
+    padding: 2em;
+}
+
 
 .fa-home:before {
 content: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/bx-home.svg);
@@ -3821,7 +3864,17 @@ background: #f2f2f2!important;
   
   
 /** BOOK **/
-  
+
+.booknext i.icon, .bookprev i.icon {
+	display: none;
+}
+
+a.bookprev {
+    float: left;
+}
+
+
+
 body#page-mod-book-view {
   font-size: 21px;
 }
@@ -4765,6 +4818,147 @@ input[disabled] {
 
 
 
+/** LECCION **/
+
+form#mod-lesson-report-form {
+	text-align: left!important;
+	overflow: auto;
+	font-size: .8em;
+	max-height: 78vh; 
+	    border-left: 1px solid #d9d9d9;
+    margin-bottom: 4em;
+    box-shadow: 3px 2px 5px 0 rgb(163 163 163 / 75%);
+    -webkit-box-shadow: 3px 2px 5px 0 rgb(163 163 163 / 75%);
+    -moz-box-shadow: 3px 2px 5px 0 rgba(163,163,163,.75);
+}
+
+#page-mod-lesson-report thead {
+    line-height: 110%;
+    position: sticky;
+    top: 0;
+    background: #EAEDEFed;
+    z-index: 1;
+	color: #294770;
+}
+
+#page-mod-lesson-report tr, #page-mod-lesson-report th, #page-mod-lesson-report td {
+	text-align: left!important;
+	    line-height: 110%;
+}
+
+#page-mod-lesson-report .generaltable {
+	font-size: .8em;
+}
+
+#page-mod-lesson-view h3 {
+	margin-top: 2em;
+}
+
+
+#page-mod-lesson-view .contents p, #page-mod-lesson-view .contents {
+	text-align: left!important;
+	font-family: 'Roboto Serif';
+}
+
+
+
+#page-mod-lesson-view .btn-secondary {
+	background: transparent;
+	color: #4270B1;
+	margin-right: 1em!important;
+}
+
+#page-mod-lesson-view .btn-secondary:hover {
+	color: #BA0C2F;
+}
+
+#page-mod-lesson-view .btn-secondary:before {
+	content: '\f101';
+	font-family: 'FontAwesome';
+	margin-right: .2em;
+	color: #BA0C2F;
+}
+
+
+#page-mod-lesson-view .branchbuttoncontainer .singlebutton button[type="submit"] {
+	margin: 0;
+	padding: 0!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/** VER MAS **/
+
+li.extendedlabel {
+	border: solid 3px #c6d4e8!important;
+	max-width: 94%;
+	margin: 1em auto!important;
+	padding: 0 .5em 2em .5em!important;
+	border-radius: 15px;
+
+}
+
+.extendedlabel p.title {
+	color: #274770!important;
+	background: url("https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/icono_estiqueta_mas.svg");
+	background-repeat: no-repeat;
+	padding-left: 1.6em;
+}
+
+a.seemoreless.more, a.seemoreless.less {
+	display: block;
+	margin-left: 40px!important;
+	margin-bottom: 1em;
+	cursor: pointer;
+}
+
+a.seemoreless.more:before {
+	content: ' ';
+	background: url("https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/icono ver mas.svg");
+	background-size: 35px; 
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	z-index: 1;
+	top: 32px;
+    	left: -40px;
+	background-repeat: no-repeat;
+	background-position: right;
+	
+}
+
+a.seemoreless.less:before {
+	content: ' ';
+	background: url("https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/icono ver menos.svg");
+	background-size: 35px; 
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	z-index: 1;
+	top: 31px;
+    	left: -38px;
+	background-repeat: no-repeat;
+	background-position: right;
+	
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -5539,13 +5733,16 @@ padding: .5em;
 /** PESTANAS **/
 
 innertab.tab_content {
-    background: none!important;
+  background: none!important;
 	color: inherit!important;
 }
 
 .intro-temas {
-  padding: 2em 2.5em;
-background: #e9eef9;
+    padding: 2em 2.5em;
+	background: none;
+	border: 1px solid #4270B1 ;
+	margin: 0!important;
+    border-radius: 5px 35px 0px 0px;
 }
 
 .intro-temas p:last-child {
@@ -5670,9 +5867,6 @@ background: #e9eef9;
   
   /** SECCIONES **/
   
-.summary {
-  border-bottom: 1px solid #D9D9D9;
-}
   
 .course-content ul.topics, .course-content ul.weeks {
   margin-top: 2em!important;
@@ -5696,22 +5890,19 @@ background: #e9eef9;
   padding: 0;
   }
   
-  .course-content ul.topics li.section .summary:after {
-  content: ' ';
-  display: block;
-  height: 20px;
-  width: 200px;
-  background: #a3c3e8;
-  position: relative;
-  top: 12px;
-  left: 0px;
-  }
-  
+   
   .activity img.activityicon {
   display: inline-block;
   }
   
-  .section .img-text {
+.summary h3 {
+    border-bottom: 10px solid #C6D4E8;
+    width: fit-content;
+    line-height: 120%;
+    margin-bottom: 1em;
+}
+
+.section .img-text {
   width: 100%;
   margin: 0 auto 1em!important;
   padding: 0;
@@ -5749,39 +5940,36 @@ background: #e9eef9;
   
 .instancename small {
   font-size: 90%;
-  }
+}
   
-  .section .activity .contentwithoutlink>a, .section .activity .activityinstance>a {
+.section .activity .contentwithoutlink>a, .section .activity .activityinstance>a {
   display: inline-block;
   text-indent: -26px;
   padding-left: 26px;
-  color: #000;
-  }
+  color: #274770;
+}
   
-  .section .activity .contentwithoutlink>a:hover, .section .activity .activityinstance>a:hover {
+.section .activity .contentwithoutlink>a:hover, .section .activity .activityinstance>a:hover {
   color: #BA0C2F;
-  }
+}
   
-  li.activity {
-  border-left: 1px solid #D9D9D9!important;
-  border-right: 1px solid #D9D9D9!important;
-  padding: 0 1.5em!important;
+li.activity {
+    border: none!important;
+    padding: 0 1.5em!important;
+    overflow: visible;
+}
+
+ul.section.img-text {
+    border: 1px solid #d9d9d9;
+	padding: 2em 0!important;
+}
+
+  
+li.activity .no-overflow {
   overflow: visible;
-  }
+}
   
-  .section li.activity:first-child {
-  padding-top: 2.5em!important;
-  }
-  
-  .section li.activity.hasinfo:last-child {
-    padding-bottom: 2.5em!important;
-  }
-  
-  li.activity .no-overflow {
-  overflow: visible;
-  }
-  
-  .section li.activity.hasinfo h4 {
+.section li.activity.hasinfo h4 {
   font-size: 1.2em;
   font-weight: 600;
   overflow: visible!important;
@@ -5790,27 +5978,27 @@ background: #e9eef9;
   z-index: 999;
   margin: 0;
   color: #4270B1;
-  }
+}
   
-  .section li.activity.hasinfo h4:before {
+.section li.activity.hasinfo h4:before {
   content: '\f45c';
   font-family: 'FontAwesome';
   font-size: .7em;
   position: relative;
   bottom: 2px;
-  right: 20px;
-  }
+  right: 18px;
+}
   
-  .instancename h5 {
+.instancename h5 {
   display: inline-table;
   font-size: 1em;
   font-weight: 700;
   text-indent: -8px;
   padding-left: 0;
   color: #4270B1;
-  }
+}
   
-  .instancename h5:before{
+.instancename h5:before{
   content: ' ';
   display: inline-block;
   background: #4270B1;
@@ -5820,11 +6008,11 @@ background: #e9eef9;
   left: -55px;
   top: 34px; 
   z-index: 9;
-  }
+}
   
-  text {
+text {
   margin: 0;
-  }
+}
 
 .format-onetopic #course_format_onetopic_config_movesection .form-label {
   font-weight: 700;
@@ -7362,14 +7550,13 @@ h2.qn-number {
     margin-top: 1em;
 }
 
-#page-mod-wiki-view [role="main"] div:nth-of-type(6)
- {
+#page-mod-wiki-view [role="main"] div:nth-of-type(6) {
 	border: solid 1px #d9d9d9;
 	 padding: 2em 1em!important;
 	 box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
-    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
-    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
-    border-radius: 5px 35px 5px 5px;
+		-webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+		-moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+	border-radius: 5px 35px 5px 5px;
 	font-family: 'Roboto Serif';
 }
 
@@ -7389,10 +7576,18 @@ h2.qn-number {
 
 .fp-filename {
 	position: relative;
-	bottom: 8px
+	bottom: 8px;
 }
 
 
 
 
 
+/** certificados **/
+
+
+#page-mod-customcert-edit form .row, #page-mod-customcert-edit_element form .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
