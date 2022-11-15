@@ -164,8 +164,8 @@ img.userpicture:hover {
 }
 
 .pagelayout-admin {
-  background-image: repeating-linear-gradient(-45deg, #d9d9d9, #d9d9d9 0.7px, #fff 0, #fff 50%);
-  background-size: 18px 18px;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(-45deg, #d9d9d9 0, #d9d9d9 1px, #ffffff 0, #ffffff 50%);
 }
 
 .block_news_items .card-body .footer {
@@ -4278,9 +4278,10 @@ footer {
     margin-bottom: 1em!important;
     line-height: 120%!important;
     font-weight: bold;
-    border-bottom: 2px solid #294770;
+    border-bottom: 4px solid #C6D4E8;
     width: fit-content;
 } 
+
 
 .book_content .card-header {
   margin: 1.5em 2em 0;
@@ -5211,20 +5212,21 @@ a.seemoreless.less:before {
     line-height: 120%!important; 
   } 
   
-  #page-mod-page-view .generalbox h5, .modal-body .no-overflow h5 {
+#page-mod-page-view .generalbox h5, .modal-body .no-overflow h5 {
     font-size: 1.1em!important;
-      margin-bottom: 1em!important;
-      line-height: 120%!important;
-      font-weight: bold;
-      border-bottom: 2px solid #294770!important;
-      width: fit-content;
-  }
+    margin-bottom: 1em!important;
+    line-height: 120%!important;
+    font-weight: bold;
+    border-bottom: 4px solid #C6D4E8!important;
+    width: fit-content;
+}
   
   #page-mod-page-view .generalbox h6, .modal-body .no-overflow h6 {
     font-size: 1.1em!important;
     margin-bottom: 1em!important;
     line-height: 120%!important;
     font-weight: bold;
+    border: none;
   } 
   
   #page-mod-page-view .generalbox a, .modal-body .no-overflow a {
@@ -6420,24 +6422,24 @@ ul.move-list {
 
 
 .format-tiles li.activity.subtile a, .format-tiles #page-content li.activity.subtile a {
-    color: #4f4107;
+  color: #4f4107;
 	height: 75px;
-      display: flex;
-    align-items: center;
-	    z-index: 10;
+  display: flex;
+  align-items: center;
+	z-index: 10;
 }
 
 .format-tiles li.activity.subtile .activitytitle a {
-    background: transparent!important;
-background-image: none!important;
-padding: 0;
+  background: transparent!important;
+  background-image: none!important;
+  padding: 0;
 }
 
 .format-tiles li.activity.subtile {
 	border-radius: 0 50px 50px 0;
 	padding: 0 .5em!important;
 	background-color: transparent;
-	border: 1px solid  #a3c3e8!important;
+	border: none!important;
 	border-left: 16px solid  #a3c3e8!important;
 	background-image: none!important;
 	box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
@@ -6469,11 +6471,11 @@ padding: 0;
 
 .format-tiles .clickable-region {
 	height: 75px;
-    width: 237px;
-    position: absolute;
-    top: 0;
-    left: -25px;
-    padding: 0;
+  width: 237px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  padding: 0;
 }
 
 .format-tiles li.activity.subtile a:hover, .format-tiles #page-content li.activity.subtile a:hover, .format-tiles li.activity.subtile .activitytitle:hover {
@@ -6481,9 +6483,16 @@ padding: 0;
     text-decoration: none;
 }
 
+.format-tiles .section.subtiles .activity.label .actions {
+  top: 31px;
+  right: 0;
+  left: 31px;
+  position: absolute;
+}
+
 .format-tiles li.activity.subtile:hover {
     background-color: transparent;
-	border: 1px solid #4270B1!important;
+	border: none!important;
 	border-left: 16px solid  #4270B1!important;
 }
 
@@ -6496,13 +6505,13 @@ padding: 0;
 }
 
 .format-tiles .embed_cm_modal .modal-header h5, .format-tiles .embed_cm_modal .modal-header h4 {
-    color: #294770;
+    color: #294770!important;
 	font-weight: normal;
 }
 
 .modal-dialog-scrollable .modal-content {
 	border: 1px solid #797979;
-	    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .format-tiles .embed_cm_modal .modal-header .close {
@@ -6623,7 +6632,6 @@ padding: 0;
     opacity: 1;
 }
 
-
 .format-tiles .content .fa-cog:before {
 	font-size: 1.5em!important;
     margin-left: 1em;
@@ -6632,11 +6640,9 @@ padding: 0;
 	top: 18px
 }
 
-
 .format-tiles .course-content ul.tiles .tile.spacer, .format-tiles.pagelayout-course .course-content li.section ul li.activity.spacer {
 	border: none!important;
 }
-
 
 .format-tiles .subtile .dropdown-menu .dropdown-item {
     padding-top: 3px;
@@ -6653,7 +6659,7 @@ padding: 0;
 }
 
 .format-tiles .phototile .progress-indic {
-    background-color: rgba(255,255,255,0.65);
+    background-color: rgba(255,255,255,0.65)!important;
 	color: #000;
 	font-size: .8em;
 }
@@ -9135,19 +9141,196 @@ background: #00000047!important;
 
 
 
-/** administracion **/
 
-#page-backup-backup img.icon {
-    display: initial;
+
+
+
+/* nube **/
+
+.path-mod-wordcloud #mod-wordcloud-div {
+	box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    border-radius: 5px 35px 5px 5px;
+border: 1px solid #d9d9d9;
+	background: #fff;
+	padding: 2em;
+}
+
+.path-mod-wordcloud .wordcloud-header {
+	background: transparent;
+}
+
+.path-mod-wordcloud #mod-wordcloud-new-word {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #70B142;
+    border-radius: 0;
+    padding-left: 1em;
 }
 
 
-#page-backup-backup .form-check-input {
-position: absolute;
-margin-top: 0.7rem;
-margin-left: -1.25rem;
+.path-mod-wordcloud #mod-wordcloud-new-word::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #70B142!important;
+  opacity: 1; /* Firefox */
+}
+
+.path-mod-wordcloud #mod-wordcloud-new-word:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #70B142!important;
+}
+
+.path-mod-wordcloud #mod-wordcloud-new-word::-ms-input-placeholder { /* Microsoft Edge */
+  color: #70B142!important;
+}
+
+
+.path-mod-wordcloud .w6 {
+	color: #294770;
+	font-size: 3.57143em;
+	line-height: 100%;
+}
+
+.path-mod-wordcloud .w5 {
+	color: #BA0C2F;
+	font-size: 3.09524em;
+	line-height: 100%;
+}
+
+
+.path-mod-wordcloud .w4 {
+	color: #3CB5BD;
+	font-size: 2.61905em;
+	line-height: 100%;
+}
+
+
+.path-mod-wordcloud .w3 {
+	color: #C7A55E;
+	font-size: 2.142857em;
+	line-height: 100%;
+}
+
+.path-mod-wordcloud .w2 {
+	color: #D95056;
+	font-size: 1.666667em;
+	line-height: 100%;
+}
+
+
+.path-mod-wordcloud .w1 {
+	color: #4270B1;
+	font-size: 1.190476em;
+	line-height: 100%;
+}
+
+
+.path-mod-wordcloud #mod-wordcloud-words-box {
+	padding: 2em;
+}
+
+#mod-wordcloud-fs-btn {
+	background: transparent!important;
+	color: #BA0C2F!important;
+	padding: 0.7em 0!important;
+}
+
+#mod-wordcloud-fs-btn:hover {
+		color: #4270B1!important;
 }
 
 
 
+
+
+
+
+/** debate **/
+
+#page-mod-debate-view [role="main"] .mod-debate-topic-container.container {
+	box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    border-radius: 5px 35px 5px 5px;
+	border: 1px solid #d9d9d9;
+	padding: 2em;
+}
+
+
+.mod-debate-border-style {
+    background-color: transparent;
+    border: none!important;
+}
+
+
+.mod-debate-topic.p-3.mod-debate-border-style {
+	  font-size: 1.485714em!important;
+  line-height: 120%!important;
+  margin-bottom: 1em!important;
+  border-bottom: 10px solid #C6D4E8!important;
+  width: fit-content;
+	padding: 0!important;
+  padding-bottom: 0.2em!important;
+	text-align: left
+}
+
+.mod-debate-description.p-3.mod-debate-border-style {
+	padding: 0!important;
+}
+
+
+.col-12.col-sm-6.mod-debate-no-padding {
+	background: #ebeef0;
+	border-left: 4px solid #fff;
+	border-radius: 10px!important;
+	margin-bottom: 2em;
+}
+
+
+.mod-debate-response-container.container {
+	padding: 0!important;
+}
+
+
+.mod-debate-positive, .mod-debate-positive-response-counter, .mod-debate-positive-icon {
+    color: #70B142;
+    font-weight: 700;
+}
+
+
+.mod-debate-negative, .mod-debate-negative-response-counter, .mod-debate-negative-icon {
+    color: #BA0C2F;
+    font-weight: 700;
+}
+
+.mod-debate-positive.p-3.mod-debate-border-style {
+	border-bottom: 4px solid #fff!important;
+}
+
+.mod-debate-negative.p-3.mod-debate-border-style {
+	border-bottom: 4px solid #fff!important;
+}
+
+
+.mod-debate-user-info.mt-3 img {
+	border-radius: 50px!important;
+}
+
+#mod-debate-negative-response-input, #mod-debate-positive-response-input {
+	font-size: .9em;
+	line-height: 160%;
+	min-height: 250px!important;
+}
+
+
+#page-mod-debate-debate .fa-ellipsis-h {
+	cursor: pointer!important;
+	color: #BA0C2F!important;
+}
+
+.mod-debate-find-response-text {
+    border: 1px solid #d3d3d3;
+    border-radius: 0.2em;
+    padding: 0.5em;
+	background: #fff;
+}
 
