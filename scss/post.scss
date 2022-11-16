@@ -4197,7 +4197,7 @@ footer {
   margin-top: -1.809524em;
 }
 
-.book_toc_numbered.clearfix {
+.book_toc_numbered.clearfix, .book_toc_none, .book_toc_bullets, .book_toc_indented, .book_toc_latin, .book_toc_roman, .book_toc_alphanumbered  {
   font-size: 0.761905em;
   font-weight: 400;
   color: #BA0C2F ;
@@ -4215,7 +4215,20 @@ footer {
   color: #333;
 }
 
-.book_content{
+.book_toc_none ul, .book_toc_indented ul, .book_toc_latin ul, .book_toc_roman ul, .book_toc_alphanumbered ul {
+	list-style-type: none!important;
+}
+
+.book_toc_indented ul, .book_toc_latin ul, .book_toc_roman ul, .book_toc_alphanumbered ul {
+	list-style-type: none!important;
+	margin-left: 0;
+    padding-left: 1.3rem;
+}
+
+
+
+
+.book_content {
   counter-reset: footnotes;
 }
 
@@ -6992,6 +7005,7 @@ white-space:nowrap;
   overflow: auto;
   max-height: 78vh;
   border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
   margin-bottom: 1em;
 }
 
@@ -7006,17 +7020,15 @@ white-space:nowrap;
 display: none;
 }
 
-
-.path-mod-assign .gradingtable .c2 {
-    max-width: 130px!important;
-  white-space: normal!important;
-}
-
 .path-mod-assign .gradingtable .c3 {
   max-width: 150px!important;
   min-width: 150px;
   white-space: normal!important;
   word-break: break-all;
+}
+
+#page-mod-assign-grading th {
+	text-align: left!important;
 }
 
 .path-mod-assign .gradingtable .submissionstatus, .path-mod-assign .gradingtable .submissionstatussubmitted, .path-mod-assign .gradingtable .submissiongraded, .path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted, .path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded, .timeremaining, .submissioneditable {
@@ -7068,7 +7080,6 @@ display: none;
     white-space: normal!important;
     max-width: 200px!important;
     min-width: 200px;
-    word-break: break-all;
 }
 
 ul.pagination {
@@ -7829,6 +7840,13 @@ input::file-selector-button:hover {
 
 .userlist img.userpicture {
   display: none;
+}
+
+#participants th.cell.c1 {
+    font-size: .9em!important;
+    white-space: break-spaces;
+    word-break: break-word;
+    max-width: 200px;
 }
 
 .userlist table#participants {
@@ -8681,6 +8699,8 @@ clear: left;
 	max-height: 70vh;
 	overflow: auto;
 	border-top: 1px solid #ccc;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;  
 }
 
 .path-grade-report-grader .gradeparent img.userpicture {
@@ -9334,3 +9354,281 @@ border: 1px solid #d9d9d9;
 	background: #fff;
 }
 
+
+
+
+/** taller **/
+
+.path-mod-workshop .userplan {
+	box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    border-radius: 5px 35px 5px 5px;
+border: 1px solid #d9d9d9;
+	margin-bottom: 3em;
+	line-height: 140%;
+	font-size: .85em!important;
+}
+
+.path-mod-workshop .userplan dt.active, .path-mod-workshop .userplan dd.active {
+	background: #D4E8C6;
+}
+
+.path-mod-workshop .userplan dt.active .phasetitle {
+    font-size: 1.1em;
+	line-height: 110%!important;
+}
+
+.path-mod-workshop .userplan dd.active {
+	line-height: 120%;
+}
+
+.path-mod-workshop .userplan dt, .path-mod-workshop .userplan dd {
+	padding: .5em;
+}
+
+.path-mod-workshop .userplan dd, .path-mod-workshop .userplan dd a, .path-mod-workshop .userplan dd a:link, .path-mod-workshop .userplan dd a:hover, .path-mod-workshop .userplan dd a:visited, .path-mod-workshop .userplan dd a:active {
+	color: #767676;	
+}
+
+.path-mod-workshop .userplan dd {
+	background: #ebeef0;
+}
+
+
+
+
+
+
+/** dialogo **/
+
+body.path-mod-dialogue #region-main .nav-tabs>li , body.path-mod-dialogue #region-main .nav-pills>li {
+	color: #000;
+  font-weight: 400;
+  padding: 0;
+  margin:  0 1em .5em;
+    line-height: 160%;
+}
+
+body.path-mod-dialogue #region-main .nav-tabs>li a, body.path-mod-dialogue #region-main .nav-pills>li a{
+	color: #000;
+  display: inline-block;
+  margin: 0 0 .5em;
+  position: relative;
+  bottom: -8px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: 0;
+	padding: 0 0 .5em;
+}
+
+body.path-mod-dialogue #region-main .nav-tabs>.active>a, body.path-mod-dialogue #region-main .nav-tabs>.active>a:hover, body.path-mod-dialogue #region-main .nav-tabs>.active>a:focus {
+		border: none;
+  border-bottom: #4270B1 solid 8px;
+  z-index: 1;
+  margin-bottom: 0;
+	color: inherit;
+}
+
+body.path-mod-dialogue #region-main .nav-tabs>li a:hover, body.path-mod-dialogue #region-main .nav-pills>li a:hover{
+	  border: none;
+  border-bottom: #4270B1 solid 8px!important;
+  z-index: 1;
+  margin-bottom: 0;
+	  background-color: transparent;
+}
+
+
+body.path-mod-dialogue #region-main .btn-create {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 220%;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #70B142;
+    background-repeat: repeat-x;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+
+body.path-mod-dialogue #region-main .btn-create:hover {
+	    background-color: #4270B1;
+}
+
+body.path-mod-dialogue #region-main .btn-group>.btn-small {
+	font-size: .9375rem;
+}
+
+#page-mod-dialogue-conversation .row {
+	flex-direction: row;
+}
+
+body.path-mod-dialogue #region-main .label-info, body.path-mod-dialogue #region-main .badge-info {
+    background-color: #C6D4E8!important;
+	padding: .5em .7em;
+	border-radius: 50px;
+	color: #213858;
+	font-weight: normal;
+}
+
+body.path-mod-dialogue #region-main .btn-group>.btn:last-child, body.path-mod-dialogue #region-main .btn-group>.btn:first-child {
+	border: 1px solid #d9d9d9;
+	padding: .3em .5em!important;
+	color: #4270B1;
+}
+
+body.path-mod-dialogue #region-main .btn-group>.btn:last-child:hover, body.path-mod-dialogue #region-main .btn-group>.btn:first-child:hover {
+	background: #ebeef0;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+}
+
+body.path-mod-dialogue #region-main .btn-create:hover, body.path-mod-dialogue #region-main .btn-create:focus, body.path-mod-dialogue #region-main .btn-create:active, body.path-mod-dialogue #region-main .btn-create.active, body.path-mod-dialogue #region-main .btn-create.disabled, body.path-mod-dialogue #region-main .btn-create[disabled] {
+    color: #fff;
+    background-color: #4270B1;
+	box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+}
+
+body.path-mod-dialogue #region-main img.userpicture {
+	max-width: 42px;
+	margin: 0;
+}
+
+body.path-mod-dialogue #region-main .conversation-list {
+	font-size: .9em;
+}
+
+body.path-mod-dialogue #region-main .table th, body.path-mod-dialogue #region-main .table td {
+    padding: 1em 0.4em 1em 0;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid #d9d9d9;
+}
+
+body.path-mod-dialogue #region-main span.participant img {
+	max-width: 25px;
+}
+
+body.path-mod-dialogue #region-main span.participant {
+	display: inline-block;
+	margin-top: 1em!important;
+	color: #767676;
+}
+
+body.path-mod-dialogue #region-main .nav-tabs>li>a:hover, body.path-mod-dialogue #region-main .nav-tabs>li>a:focus {
+    border-color: inherit;
+	background: inherit;
+}
+
+body.path-mod-dialogue #region-main .state-draft {
+    background-color: #C6D4E8;
+}
+
+body.path-mod-dialogue #region-main .state-indicator {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 80%;
+    font-weight: normal;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+}
+
+body.path-mod-dialogue #region-main .state-open {
+    background-color: #D4E8C6;
+	color: #353b31;
+	font-size: .6em;
+}
+
+body.path-mod-dialogue #region-main .conversation, body.path-mod-dialogue #region-main .conversation .conversation {
+	box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163,163,163,0.75);
+    border-radius: 5px 35px 5px 5px;
+border: 1px solid #d9d9d9;
+padding: 2em;
+}
+
+body.path-mod-dialogue #region-main .conversation-object img.userpicture {
+    max-width: 55px;
+    height: auto;
+}
+
+body.path-mod-dialogue #region-main .conversation-body {
+    padding: 0 0.8em;
+    border: none;
+    border-radius: 0;
+    box-shadow:none;
+}
+
+body.path-mod-dialogue #region-main .conversation-header {
+    font-size: .9em;
+    margin-bottom: 0;
+	line-height: 0;
+}
+
+body.path-mod-dialogue #region-main .conversation ul.message-actions.pull-right {
+	float: none!important;
+	display: block!important;
+	margin: 0!important;
+		line-height: 160%;
+}
+
+body.path-mod-dialogue #region-main .conversation hr {
+    margin: 1em 0;
+}
+
+body.path-mod-dialogue #region-main .conversation span.conversation-openedby.pull-left {
+	width: 100%;
+	line-height: 160%;
+}
+
+body.path-mod-dialogue #region-main .message-actions li a {
+    margin-left: 0;
+	margin-right: 1em;
+	font-size: .9em;
+}
+
+body.path-mod-dialogue #region-main .conversation .attachments {
+	border: none;
+}
+
+body.path-mod-dialogue #region-main .conversation .attachments h5 {
+    border-left: 4px solid #C6D4E8;
+	padding-left: .2em;
+	width: fit-content;
+	margin: 0;
+}
+
+body.path-mod-dialogue #region-main .conversation .participants {
+	border-top: 1px solid #d9d9d9;
+		font-size: .8em!important;
+}
+
+body.path-mod-dialogue #region-main .conversation .participants span.participant {
+	margin-top: 0.3em!important;
+}
