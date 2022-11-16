@@ -6074,6 +6074,7 @@ innertab.tab_content {
 	border: 1px solid #4270B1 ;
 	margin: 0!important;
     border-radius: 5px 35px 0px 0px;
+    line-height: 160%;
 }
 
 .intro-temas p:last-child {
@@ -6225,9 +6226,12 @@ innertab.tab_content {
   }
   
    
-  .activity img.activityicon {
-  display: inline-block;
-  }
+.activity img.activityicon {
+    display: inline-block;
+    width: 24px;
+    height: 24px!important;
+    border-radius: 0;
+}
   
 .summary h3 {
     border-bottom: 10px solid #C6D4E8;
