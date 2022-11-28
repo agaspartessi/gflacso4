@@ -1413,13 +1413,14 @@ body#page-login-index h1.h2.card-header.text-center img {
 }
 
 body#page-login-index h1.h2.card-header.text-center {
-    position: relative;
-    top: 60px;
-    background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-vertical-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    background-position-x: center;
+    display: table;
+	position: relative;
+	top: 25px;
+	background-image: url("https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-vertical-2.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 0;
+	background-position: center;
 }
 
 body#page-login-index .card-body {
@@ -1876,11 +1877,7 @@ button {
     border-radius: 5px;
 }
 
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: 600;
-}
+
 
 .btn-secondary {
     background: #BA0C2F;
@@ -2364,6 +2361,19 @@ img {
     border-style: none;
 }
 
+.icon {
+    font-size: 0.7619047619047619em;
+}
+
+#page-mod-forum-view #region-main [role="main"] {
+    overflow: hidden;
+}
+
+.filemanager-toolbar .btn {
+    box-shadow: none!important;
+}
+
+
 #region-main img.userpicture {
     margin-right: 0.5em;
 }
@@ -2384,6 +2394,16 @@ img {
     color: #5c6e6f;
     background-color: #C5E9EB !important;
     height: auto;
+}
+
+.format-tiles .pagesechead {
+	width: 100%;
+	top: -25px;
+	padding: 0 1.5em !important;
+}
+
+.format-tiles .sectiontitle {
+	padding: 0;
 }
 
 .format-site h1 {
@@ -2591,6 +2611,7 @@ a:not([class]):focus,
     font-weight: 400;
     line-height: 104%;
     margin-bottom: 0.5em;
+    color: #294770;
 }
 
 #region-main h2 small {
@@ -3213,11 +3234,12 @@ a.action_link:before {
 }
 
 .block_gflacso_comunicacion .additional_links a:before {
-    content: '';
-    margin-right: 4px;
-    font-family: 'FontAwesome';
-    font-size: 14px;
-    color: #BA0C2F;
+    content: ''!important;
+    margin-right: 4px!important;
+    font-family: 'FontAwesome'!important;
+    font-size: 14px!important;
+    color: #BA0C2F!important;
+	background: transparent!important;
 }
 
 .newlink a:before {
@@ -3403,6 +3425,10 @@ li.post {
     cursor: pointer;
     border-radius: 35px;
     font-weight: 600;
+    width: max-content;
+    box-shadow: 3px 2px 5px 0px rgba(163, 163, 163, 0.75);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(163, 163, 163, 0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(163, 163, 163, 0.75);
 }
 
 .btn-primary {
@@ -3711,8 +3737,6 @@ textarea {
     float: none;
 }
 
-
-
 header#page-header {
     margin-top: 1em;
 }
@@ -3746,35 +3770,38 @@ header#page-header {
     padding-top: .2em;
 }
 
-.moodle-dialogue-base .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.moodle-dialogue-base .container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
     padding: 0;
 }
 
 .moodle-dialogue-base .row {
-	flex-direction: row!important;
+    flex-direction: row !important;
 }
 
 
 .moodle-dialogue-bd {
-	font-size: .85em;
+    font-size: .85em;
 }
 
-.moodle-dialogue-base .nav-pills .nav-link.active, .moodle-dialogue-base .nav-pills .show>.nav-link {
+.moodle-dialogue-base .nav-pills .nav-link.active,
+.moodle-dialogue-base .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #4270B1;
 }
 
-
 .moodle-dialogue-base .fp-repo-area a.nav-link:hover {
-	background: #D9D9D9!important;
+    background: #D9D9D9 !important;
 }
 
 .moodle-dialogue-base label {
     display: inline-block;
     margin-bottom: 0;
 }
-
-
 
 
 
@@ -3808,8 +3835,6 @@ header#page-header {
     .nav.usernav .nav-item .icon {
         font-size: 1.6em;
     }
-
-
 
     .card .card-body {
         padding: 0;
@@ -3917,10 +3942,22 @@ header#page-header {
 }
 
 #page-backup-backup #region-main [role="main"] img.icon {
-    display: initial!important;
+    display: initial !important;
 }
 
 
+[data-region="filter"] .btn,
+[data-region="paging-control-container"] .btn {
+	box-shadow: none!important;
+}
+
+[data-region="paged-content-page"] {
+	line-height: 140%;
+}
+
+[data-region="paged-content-page"] .btn {
+	box-shadow: none!important;
+}
 
 
 
@@ -4035,7 +4072,7 @@ header#page-header {
 
 
 [data-region="drawer"] {
-    top: 65px;
+    top: 117px;
     background: #fff;
     height: calc(100% - 117px);
     padding: 0;
@@ -4189,7 +4226,7 @@ a.list-group-item-action[data-key="coursehome"] {
 }
 
 #page-mod-book-edit .row {
-	flex-direction: column;
+    flex-direction: column;
 }
 
 a.bookprev {
@@ -4890,7 +4927,7 @@ span.mail_button:hover {
 }
 
 .mail_toolbar .mail_button.mail_toggle_buttons:hover {
-    background: #4270B1 !important;
+    background: #C6D4E8!important;
     color: #fff !important;
 }
 
@@ -5667,10 +5704,20 @@ a.seemoreless.less:before {
 
 }
 
-
-
 .group img {
     display: none;
+}
+
+.path-mod-forum .discussion-nav .btn {
+	box-shadow: none;
+}
+
+a.btn.btn-link.p-0 {
+	box-shadow: none;
+}
+
+.content-alignment-container {
+	overflow: visible;
 }
 
 [data-content="inpage-reply-content"] .card {
@@ -5752,19 +5799,35 @@ table.table.discussion-list {
 #page-mod-forum-view .table.discussion-list .btn {
     padding: 0;
     width: 1.5em;
+    box-shadow: none;
+}
+
+.pl-0, .px-0, .pl-2, .px-2 {
+    padding-left: 0!important;
+    width: 1%;
+    white-space: nowrap;
 }
 
 .post-actions.d-flex.align-self-end.justify-content-end.flex-wrap.ml-auto {
-    justify-content: center !important;
+    justify-content: center!important;
     font-family: 'Roboto Condensed';
     padding: 8px 0;
-    margin: 0;
+    margin: 0!important;
     width: 100%;
     border-top: #d9d9d9 solid 1px;
-    margin-top: 30px;
-    position: inherit;
-    display: inline-block;
+    margin-top: 1.5em!important;
+    position: inherit; 
+    display: flex!important;
     flex-flow: inherit;
+}
+
+[data-region="post-action"] {
+    padding: 0 0.75rem;
+    margin-bottom: 1em!important;
+}
+
+[data-gradable-itemtype="forum"] {
+    overflow: auto;
 }
 
 .forumpost {
@@ -5817,8 +5880,8 @@ input.btn.btn-secondary.ml-1 {
 
 #multi_section_tiles .moveablesection .summary {
     border: none !important;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1.428571em;
+    margin-right: 1.428571em;
 }
 
 .format-tiles ul.tiles .tile_bar {
@@ -5954,8 +6017,9 @@ input.btn.btn-secondary.ml-1 {
 .format-tiles .sectiontitle h2 {
     border-bottom: 10px solid #C6D4E8;
     width: fit-content;
-    line-height: 120%!important;
-    margin-bottom: 1em!important;
+    line-height: 120% !important;
+    margin-bottom: 1em !important;
+    font-size: 1.5em !important;
 }
 
 .format-tiles .sectiontitle {
@@ -6593,7 +6657,7 @@ innertab.tab_content {
     padding-left: 26px;
     color: #274770;
     line-height: 120%;
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .section .activity .contentwithoutlink>a:hover,
@@ -6842,7 +6906,7 @@ ul.move-list {
 .format-tiles .embed_cm_modal .modal-header h4 {
     color: #294770 !important;
     font-weight: normal;
-	line-height: 120%;
+    line-height: 120%;
 }
 
 .modal-dialog-scrollable .modal-content {
@@ -6992,7 +7056,14 @@ ul.move-list {
 
 .format-tiles .filterbutton:hover,
 .sectionbutton:hover {
-    background: transparent;
+    background: transparent !important;
+}
+
+.format-tiles .sectionbuttons {
+	position: relative;
+	right: 5px;
+	top: -30px!important;
+	z-index: 2;
 }
 
 .format-tiles .course-content .icon:hover,
@@ -8803,8 +8874,8 @@ img.img-thumbnail.pull-left {
 }
 
 .notefooter .fa-times:before {
-content: "\f00d";
-margin-right: 0.2em;
+    content: "\f00d";
+    margin-right: 0.2em;
 }
 
 .path-mod-icontent .icontent-page .col-10 {
@@ -9969,9 +10040,7 @@ body.path-mod-dialogue #region-main .btn-group>.btn:first-child:hover {
 .btn:focus,
 .btn.focus {
     outline: 0;
-    box-shadow: 3px 2px 5px 0px rgba(163, 163, 163, 0.75);
-    -webkit-box-shadow: 3px 2px 5px 0px rgba(163, 163, 163, 0.75);
-    -moz-box-shadow: 3px 2px 5px 0px rgba(163, 163, 163, 0.75);
+    box-shadow: none;
 }
 
 body.path-mod-dialogue #region-main .btn-create:hover,
@@ -10352,13 +10421,15 @@ span.oublog_links_comment {
 }
 
 
-.filepicker-filelist, .filemanager-container {
+.filepicker-filelist,
+.filemanager-container {
     font-size: .8em;
 }
 
 
 
-@media screen and (max-width: 768px), (max-width: 576px) {
+@media screen and (max-width: 768px),
+(max-width: 576px) {
     span.logo.d-none.d-sm-inline {
         background-image: url(https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/logo-flacso-campus-azul.svg);
         background-repeat: no-repeat;
@@ -10382,7 +10453,8 @@ span.oublog_links_comment {
         padding: 0 !important;
     }
 
-    .nav-tabs .nav-link, .nav-pills .nav-link {
+    .nav-tabs .nav-link,
+    .nav-pills .nav-link {
         background: none !important;
     }
 
@@ -10397,7 +10469,8 @@ span.oublog_links_comment {
         text-align: left;
     }
 
-    #page-course-view-onetopic .nav-tabs .nav-link.active, #page-course-view-onetopic .nav-tabs .nav-item.show .nav-link {
+    #page-course-view-onetopic .nav-tabs .nav-link.active,
+    #page-course-view-onetopic .nav-tabs .nav-item.show .nav-link {
         border: none;
         border-left: #4270B1 solid 8px;
         padding-left: 0.5em;
@@ -10545,16 +10618,230 @@ span.oublog_links_comment {
         padding: 1em;
     }
 
-    .book_toc_numbered.clearfix, .book_toc_none, .book_toc_bullets, .book_toc_indented, .book_toc_latin, .book_toc_roman, .book_toc_alphanumbered {
+    .book_toc_numbered.clearfix,
+    .book_toc_none,
+    .book_toc_bullets,
+    .book_toc_indented,
+    .book_toc_latin,
+    .book_toc_roman,
+    .book_toc_alphanumbered {
         font-size: .861905em;
     }
 
     .format-tiles .sectiontitle h2 {
-        font-size: 1.5em!important;
-        }
+        font-size: 1.5em !important;
+    }
+
+    .format-tiles .pagesechead {
+        margin: 0 5px;
+        width: calc(100% - 11px);
+    }
+
+    .format-tiles .course-content li.activity.label h4:before {
+        bottom: 2px;
+        right: 4px;
+    }
+
+    [data-region="drawer"] {
+        top: 65px;
+    }
+    
+    .format-tiles .sectiontitle h2 {
+		font-size: 1em!important;
+	}
+
+	.format-tiles .sectiontitle {
+		width: 100%;
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.format-tiles .pagesechead {
+		margin: 0;
+		width: calc(100% - 11px)!important;
+	}
+
+	.format-tiles .pagesechead {
+		top: -15px!important;
+	}
+
+    #page-mod-forum-view .table.discussion-list img {
+		display: none;
+	}
+
+	#page-mod-page-view #region-main [role="main"],
+	.modal-body .no-overflow {
+		font-size: 14px;
+	}
+
+	.mail_toolbar .mail_paging {
+		top: 66px;
+		padding-top: 0.6em !important;
+	}
+
+	.mail_toolbar.fixed {
+		top: 66px!important;
+	}
+
+	.mail_toolbar.fixed .mail_paging {
+		top: 121px;
+	}
+
+	.mail_toolbar,
+	.mail_buttons {
+		height: 3.66667em!important;
+	}
+
+	.mail_button.enviadoyredactar_button,
+	.mail_toolbar .mail_button.mail_toggle_buttons {
+		height: 100%!important;
+	}
+
+	.mail_toolbar .mail_button.mail_toggle_buttons {
+		padding-top: 1.5em !important;
+	}
+
+	.mail_buttons {
+		margin-top: -.4em;
+	}
+	.mail_header .mail_users {
+		margin-left: 34px !important;
+	}
+
+	.mail_list .mail_users {
+		margin-left: 0;
+	}
+
+	.mail_list .mail_item {
+		height: 73px;
+		padding-top: 5px;
+	}
+
+	.mail_list .mail_flags {
+		position: absolute;
+		right: 10px;
+		margin-top: 5px;
+		-ms-transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+
+	.mail_list {
+		line-height: 120%;
+		font-size: 0.9em;
+	}
+
+	.mail_list .mail_adv_checkbox {
+		margin: 15px 10px;
+		width: 14px;
+		height: 14px;
+	}
+
+	.mail_svg .mail_checkbox0 {
+		background-size: cover;
+	}
+
+	.mail_list .mail_date {
+		position: absolute;
+		right: 2.2em;
+		margin-top: -50px;
+	}
+
+	.mail_list .mail_attached {
+		position: absolute;
+		margin-top: -18px;
+		right: 10px;
+		-ms-transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+
+	.mail_list .mail_summary {
+		display: block;
+		width: 83%;
+		margin-left: 0;
+		padding: 0;
+	}
+	.mail_header .mail_summary {
+		margin-left: 41px;
+	}
+
+	.mail_novisible {
+		visibility: hidden !important;
+		height: 75px;
+	}
+
+	.mail_view,
+	.mail_references {
+		margin: 0 1em;
+		padding: 1.5em;
+	}
+
+	.mail_header img.userpicture {
+		width: 3em;
+		margin-left: 0;
+	}
+
+	.mail_body {
+		margin-left: 0.2em !important;
+	}
+
+	#page-local-mail-create a.btn.btn-primary {
+		margin-left: 1em;
+	}
+
+	.moodleSkin table.mceLayout,
+	.mform fieldset {
+		max-width: 88vw;
+	}
+
+	.yui3-panel {
+		width: 88vw!important;
+	}
+	.nav-tabs .nav-link.active:not(:disabled):not(.disabled):active,
+	.nav-tabs .nav-link.active:not(:disabled):not(.disabled).active,
+	.show>.nav-tabs .nav-link.active.dropdown-toggle,
+	.nav-pills .nav-link.active:not(:disabled):not(.disabled):active,
+	.nav-pills .nav-link.active:not(:disabled):not(.disabled).active,
+	.show>.nav-pills .nav-link.active.dropdown-toggle {
+		color: initial;
+		border-color: #4270B1;
+	}
+
+	.navbar .count-container {
+		font-size: 0.8em;
+	}
+
+	#page-my-index .flex-wrap .ml-auto.d-flex {
+		position: absolute;
+		top: -80px;
+		height: 55px;
+		background: transparent!important;
+	}
+
+	#page-my-index .flex-wrap .ml-auto.d-flex .btn-secondary {
+		margin-bottom: 0;
+		font-size: 0.9em;
+		padding: 5px !important;
+		border-radius: 100px 0 100px 100px;
+		width: auto;
+		line-height: 140%;
+		position: inherit;
+	}
+	body#page-my-index span.text-primary:before {
+		top: 6px;
+	}
+
+	[data-region="paged-content-page"] .col-md-1.p-0.d-flex {
+		position: absolute;
+		right: -15px;
+	}
+
+	#page-my-index .col-md-11.col-md-11.d-flex.align-items-center {
+		padding-right: 1em !important;
+	}
 
 }
-
 
 
 
@@ -10599,3 +10886,243 @@ span.oublog_links_comment {
         width: 285px;
     }
 }
+
+
+
+
+/** zona docente **/
+
+.format-tiles.course-23651 {
+	background: url('https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/mapa.google.jpg');
+}
+
+.format-tiles.course-23651 .course-content .phototile {
+	background-size: 80% !important;
+	background-color: transparent !important;
+	background-repeat: no-repeat !important;
+	box-shadow: none !important;
+	margin-bottom: 2.5em !important;
+	height: 0!important;
+	padding-bottom: 225px !important;
+}
+
+.format-tiles.course-23651 .course-content ul.tiles .tile:hover, .format-tiles.course-23651 .course-content ul.tiles .tile_bar:hover, .format-tiles.course-23651 ul.tiles .tile.selected {
+    border-left: none;
+}
+
+.format-tiles.course-23651 #page .course-content ul li.section.main {
+	background-color: #ffffff!important;
+}
+
+.format-tiles.course-23651 #page .accordion .card {
+	background-color: rgba(255,255,255,0.63)!important;
+}
+
+.format-tiles.course-23651 #page .course-content ul li.section.main#section-0  {
+	background: none!important;
+}
+
+#block-region-side-pre .card {
+	background: transparent!important;
+}
+
+.format-tiles.course-23651 .course-content ul.tiles .tile:hover {
+	border: none;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(2):hover:after {
+	content: 'Gestión de estudiantes';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(2) h3 {
+	display: none !important;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(3):hover:after {
+	content: 'Comunicación interna';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(3) h3 {
+	display: none !important;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(4):hover:after {
+	content: 'Gestión del aula';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(4) h3 {
+	display: none !important;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(10):hover:after {
+	content: 'Ideas inspiradoras';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(10) h3 {
+	display: none !important;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(9):hover:after {
+	content: 'Normativa institucional';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(9) h3 {
+	display: none !important;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(8):hover:after {
+	content: 'Recursos multimedia';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(8) h3 {
+	display: none!important;
+}
+
+.format-tiles.course-23651 .tile-clickable:nth-child(14):hover:after {
+	content: 'Bloque oculto';
+	position: absolute;
+	bottom: -2em;
+	text-align: center;
+	right: 0;
+	left: 0;
+	opacity: 1;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #000;
+	outline: 4px solid #fff;
+	-webkit-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out, all 0.5s ease-in-out;
+}
+
+.format-tiles.course-23651 #tileTextin-7 h3 {
+	display: none!important;
+}
+
+
+.format-tiles.course-23651 .phototile:nth-child(2) {
+	background-size: 75% !important;
+}
+
+.format-tiles.course-23651 .phototile:nth-child(4) {
+	background-size: 70% !important;
+}
+
+.format-tiles.course-23651 .phototile:nth-child(10) {
+	background-size: 75% !important;
+}
+
+.format-tiles.course-23651 .phototile:nth-child(14) {
+	background-size: 75% !important;
+}
+
+.format-tiles.course-23651 .sectiontitle::after, .format-tiles.course-23651 .badge-info {
+	display: none;
+}
+
+#page-course-view-tiles .intro-temas {
+    padding-bottom: 2em!important;
+}
+
+
+/** FIN ZONA DOCENTE **/
+
