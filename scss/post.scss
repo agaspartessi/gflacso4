@@ -360,14 +360,30 @@ ul.navbar-nav.d-none.d-md-flex {
 }
 
 .actividad, .actividad.celeste {
-	background-color: #fff;
-	border: 6px solid #C6D4E8;
-	border-radius: 15px;
-	padding: 2em;
-	margin: 2em 0;
-    font-size: 0.904762em;
+    background-color: #fff;
+    border: 6px solid #C6D4E8;
+    border-radius: 15px;
+    padding: 3em;
+    margin: 2em 0;
+    font-size: .904762em;
     line-height: 160%;
-	color: #192E4D!important;
+    color: #192E4D!important;
+}
+
+.section_action_menu .dropdown {
+    right: 5em!important;
+    top: -10px;
+}
+
+#region-main .section_action_menu .action-menu-trigger  .dropdown a.dropdown-toggle:before {
+	content: '\f044'!important;
+}
+
+
+.actividad h5 {
+    font-size: 1.3em;
+    color: #4270B1;
+    margin-bottom: 1em;
 }
 
 .recuadro_azul_todo_redondeado, .actividad.fucsia, .actividad.verde {
@@ -1618,7 +1634,7 @@ body#page-login-index div.card {
         flex-flow: row wrap;
         margin-right: -0.25rem;
         margin-left: -0.25rem;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
@@ -2271,6 +2287,10 @@ body {
     body {
         font-size: 15px;
     }
+}
+
+.table th, .table td {
+    vertical-align: inherit;
 }
 
 img {
@@ -2958,6 +2978,7 @@ tbody {
     max-width: 100%;
 	margin-bottom: 2em;
 	line-height: 140%;
+    margin: auto;
 }
 
 #page-mod-book-view td, #page-mod-book-view th, #page-mod-page-view td, #page-mod-page-view th {
@@ -2997,6 +3018,13 @@ table caption {
     width: 100%;
     height: auto;
 }
+
+.alert {
+    border-radius: 5px;
+    line-height: 120%;
+    font-size: .9em;
+}
+
 
 .alert-primary {
     color: #192E4D;
@@ -3889,6 +3917,11 @@ header#page-header {
         font-size: 1.6em;
     }
 
+    .usernav .avatar img.userpicture {
+        width: 45px;
+        bottom: 0;
+    }
+
     .card .card-body {
         padding: 0;
     }
@@ -3987,19 +4020,6 @@ header#page-header {
     }
 }
 
-#region-main [role="main"] li {
-    margin-bottom: 0.5em;
-}
-
-#region-main [role="main"] ol {
-    padding-left: 0em;
-    margin-bottom: 2em;
-}
-
-#region-main [role="main"] ul {
-    padding-left: 0em;
-    margin-bottom: 2em;
-}
 
 #page-backup-backup #region-main [role="main"] img.icon {
     display: initial !important;
@@ -4502,11 +4522,20 @@ footer {
 .book_toc_latin,
 .book_toc_roman,
 .book_toc_alphanumbered {
-    font-size: 0.761905em;
+	font-size: .85em;
+	line-height: 120%;
     font-weight: 400;
     color: #BA0C2F;
-    line-height: 160%;
 }
+
+.text-truncate {
+	margin-bottom: 0.5em;
+}
+
+.book_toc_numbered.clearfix li, .book_toc_none li, .book_toc_bullets li, .book_toc_indented li, .book_toc_latin li, .book_toc_roman li, .book_toc_alphanumbered li {
+	margin-bottom: .8em;
+}
+
 
 .book_toc_numbered.clearfix i.icon {
     font-size: .8em;
@@ -5412,18 +5441,27 @@ form#mod-lesson-report-form {
 /** VER MAS **/
 
 li.activity.extendedlabel {
-    border: solid 3px #c6d4e8 !important;
-    max-width: 94%;
-    margin: 1em auto !important;
-    padding: 0 .5em 2em .5em !important;
+    border: 6px solid #C6D4E8!important;
+    max-width: 98%;
+    margin: 1em 1.5em!important;
+    padding: 3em 3em 2em!important;
+    padding-top: none;
     border-radius: 15px;
+    line-height: 160%;
+    color: #192E4D!important;
 }
 
 .extendedlabel p.title {
-    color: #274770 !important;
-    background: url("https://virtual.flacso.org.ar/theme/gflacso/vale/ivan/icono_estiqueta_mas.svg");
-    background-repeat: no-repeat;
-    padding-left: 1.6em;
+	margin-top: 0;
+	font-weight: bold;
+	font-size: 1.142857em;
+	background: none!important;
+	padding-left: 0em;
+    color: #4270B1!important;
+}
+
+.extendedlabel p:last-child {
+	margin-bottom: 0;
 }
 
 a.seemoreless.more,
@@ -6567,9 +6605,6 @@ innertab.tab_content {
     margin: 0;
 }
 
-.course-content ul {
-    padding: 0 !important;
-}
 
 #page-course-view-onetopic .course-content li {
     margin-bottom: 0;
@@ -6703,6 +6738,7 @@ innertab.tab_content {
     position: absolute;
     left: -42px;
     top: 0;
+    z-index: 1;
 }
 
 .course-content ul.topics li.section .summary,
@@ -6729,9 +6765,11 @@ innertab.tab_content {
 
 .activity img.activityicon {
     display: inline-block;
-    width: 24px;
-    height: 24px !important;
-    border-radius: 0 !important;
+    width: 1em;
+    height: 1em!important;
+    border-radius: 0!important;
+    position: relative;
+    bottom: 3px;
 }
 
 .summary h3 {
@@ -6764,7 +6802,32 @@ innertab.tab_content {
 .section li.activity {
     padding: 0;
     clear: both;
+    border-bottom: none;
+    padding-top: 1.25em!important;
+    padding-bottom: 0;
+    line-height: 140%;
+
 }
+
+.section li.activity h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    overflow: visible!important;
+    position: relative;
+    left: -22px;
+    margin: 0;
+    color: #4270B1;
+}
+
+.section li.activity h4:before, .section li.activity.hasinfo h4:before {
+    content: '';
+    font-family: 'FontAwesome';
+    font-size: .7em;
+    position: relative;
+    bottom: 2px;
+    right: 10px;
+}
+
 
 .path-site li.activity>div,
 .path-course-view li.activity>div {
@@ -6818,12 +6881,12 @@ li.activity .no-overflow {
 }
 
 .section li.activity.hasinfo h4 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 600;
-    overflow: visible !important;
+    overflow: visible!important;
     position: relative;
     left: -22px;
-    z-index: 999;
+    z-index: -1;
     margin: 0;
     color: #4270B1;
 }
@@ -8707,9 +8770,29 @@ input::file-selector-button:hover {
 /** CAMBIAR ROL **/
 
 #page-course-switchrole .btn-secondary {
-    background: transparent;
+    background: #0000;
     color: #4270B1;
-    font-weight: normal;
+    font-weight: 400;
+    box-shadow: none;
+}
+
+.section .activity .availabilityinfo, .section .activity .contentafterlink {
+    font-size: .9em;
+    color: #797979;
+}
+
+.label .recuadro {
+    margin: 0;
+}
+
+.activity .instancename {
+    font-weight: bold;
+    font-size: 1.142857em;
+}
+
+#page-mod-label-mod #region-main .row {
+    display: flex;
+    flex-direction: column;
 }
 
 #page-course-switchrole .btn-secondary:hover {
@@ -9377,15 +9460,19 @@ img.req {
     max-width: 860px !important;
     max-height: 70vh;
     overflow: auto;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
+	position: sticky;
+	left: 0;
+	background: #eceef0!important;
+	z-index: 2;
 }
 
 .path-grade-report-grader .gradeparent img.userpicture {
     display: none;
 }
 
+#page-mod-assign-grading table .c0 {
+    background: #eceef0!important;
+}
 
 .path-grade-report-grader .gradeparent tr:first-child th.cell {
     position: sticky;
@@ -9393,7 +9480,7 @@ img.req {
     top: 1px;
     z-index: 3;
     border: none !important;
-    background: #d9d9d9 !important;
+    background: #eceef0!important;
 }
 
 .path-grade-report-grader tr.heading .cell {
@@ -9431,10 +9518,12 @@ img.req {
     font-size: .85em !important;
     line-height: 120%;
     border-collapse: collapse !important;
+    border: none;
 }
 
 .path-grade-report-grader .gradeparent .cell {
     padding: .5em;
+    border: none;
 }
 
 .path-grade-report-grader span.gradepass {
@@ -10622,7 +10711,7 @@ span.oublog_links_comment {
 
     .navbar .btn:not(:disabled):not(.disabled) {
         width: 30px;
-        height: 65px;
+        height: 55px;
     }
 
     .dropdown-toggle::after {
@@ -10788,6 +10877,27 @@ span.oublog_links_comment {
 
     #page-mod-book-view #region-main [role="main"] {
         font-size: 14px;
+    }
+
+    #page-mod-book-view #region-main [role="main"] p {
+        text-align: left;
+    }
+
+    #region-main [role="main"] .no-overflow ol {
+        padding-left: 3em;
+        margin-bottom: 2em;
+    }
+    
+    #region-main [role="main"] .no-overflow ul {
+        padding-left: 1rem;
+        margin-bottom: 2em;
+        list-style-type: square;
+    }
+    
+    #region-main [role="main"] .no-overflow li {
+        padding-left: 1em;
+        margin-left: 0rem;
+        list-style-position: outside;
     }
 
     body#page-mod-book-view {
@@ -11042,11 +11152,12 @@ span.oublog_links_comment {
     }
 
 	#page-my-index .flex-wrap .ml-auto.d-flex {
-		position: absolute;
-		top: -80px;
-		height: 55px;
-		background: transparent!important;
-	}
+    position: absolute;
+    top: -65px;
+    height: 55px;
+    background: #0000!important;
+    z-index: 1;
+    }
 
     span.sectionname {
         white-space: nowrap;
