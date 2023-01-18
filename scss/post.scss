@@ -2254,6 +2254,22 @@ body#page-my-index .header h5.d-inline {
 
 /** GENERAL **/
 
+ol {
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+ul {
+    padding-left: 1em;
+    margin-bottom: 2em;
+    list-style-type: square;
+}
+
+li {
+    padding-left: .5em;
+    margin-left: 0rem;
+    list-style-position: outside;
+}
 
 * {
     margin: 0;
@@ -7702,6 +7718,7 @@ table.ygtvtable tbody tr:nth-of-type(odd) {
 
 .path-mod-assign .gradingtable .c6 {
     text-align: center;
+    overflow: visible!important;
 }
 
 .path-mod-assign .gradingtable .dropdown a.dropdown-toggle:before {
@@ -9562,6 +9579,18 @@ img.req {
 #page-mod-assign-grading .row {
     flex-direction: row;
 }
+/** Vista calificador **/ 
+
+#page-mod-assign-grading table .c2 {
+	position: sticky;
+	left: 0;
+	background: #eceef0!important;
+	z-index: 2;
+}
+
+#page-mod-assign-grading table .c0 {
+		background: #eceef0!important;
+}
 
 
 
@@ -10881,23 +10910,6 @@ span.oublog_links_comment {
 
     #page-mod-book-view #region-main [role="main"] p {
         text-align: left;
-    }
-
-    #region-main [role="main"] .no-overflow ol {
-        padding-left: 3em;
-        margin-bottom: 2em;
-    }
-    
-    #region-main [role="main"] .no-overflow ul {
-        padding-left: 1rem;
-        margin-bottom: 2em;
-        list-style-type: square;
-    }
-    
-    #region-main [role="main"] .no-overflow li {
-        padding-left: 1em;
-        margin-left: 0rem;
-        list-style-position: outside;
     }
 
     body#page-mod-book-view {
