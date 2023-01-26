@@ -53,3 +53,5 @@ $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->scss = function($theme) {                                                                                                   
     return theme_gflacso4_get_main_scss_content($theme);                                                                               
 };
+
+$THEME->haseditswitch = true; // Use edit switch. Esto deshabilita el Old Button activar edición
